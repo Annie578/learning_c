@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+
 /*float calculatefuel(float distance){
 float fuelburnrate=36.5;  
 float result = distance*fuelburnrate;
@@ -9,16 +10,13 @@ return result;
 
 }*/
 /*calculate even odd number*/ 
-int evenodd(n){
+int evenodd(int n){
 
-for(int n=1; n<=10; n++){
-if(n%2 == 0){
+ if(n%2==0)
+  printf("the plane no. %d belongs to boeing\n",n);
+  else
+  printf("the plane no. %d belongs to airbus\n",n); 
   return 0;
-}
-else{
-  return 1;
-}
-}
 }
 
   
@@ -77,9 +75,11 @@ float fuelconsumed = calculatefuel(distance);
 printf("fuel consumed:%f\n",fuelconsumed);
  
 }*/
- int n;
+for(int n = 1;n<=10;n++){
 int check = evenodd(n);
-printf("even/odd numbers:%d",check);
+
+}
+
 
 
 return 0;
